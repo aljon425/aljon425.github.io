@@ -51,24 +51,14 @@ $(window).load(function () {
         }, scroll_top_duration);
     });
 	
-	$(document).on('click', 'a', function(event){
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-	});
-	
 	var $root = $('html, body');
 	$('a').click(function() {
-    var href = $.attr(this, 'href');
     $root.animate({
-        scrollTop: $(href).offset().top
-    }, 500, function () {
-        window.location.hash = href;
-    });
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
     return false;
 	});
+	
 
     // input
     $(".input-contact input, .textarea-contact textarea").focus(function () {
