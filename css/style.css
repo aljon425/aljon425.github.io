@@ -383,6 +383,7 @@ h5 {
 .box-intro .table-cell {
     display: table-cell;
     vertical-align: middle;
+	padding-top: 150px;
 }
 
 .box-intro em {
