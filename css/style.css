@@ -1116,18 +1116,6 @@ textarea:focus {
     }
 }
 
-@media only screen and (max-width: 414px) {
-    .box-headline {
-        font-size: 30px;
-    }
-    .box-intro h5 {
-        font-size: 12px;
-    }
-    .top-bar h1 {
-        font-size: 30px;
-        line-height: 30px;
-    }
-}
 
 @media only screen and (max-width: 375px) {
     .box-headline {
@@ -1141,3 +1129,41 @@ textarea:focus {
         line-height: 30px;
     }
 }
+
+/*Iphone 6/7+ */
+
+@media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) 
+    and (orientation : landscape) 
+    and (-webkit-min-device-pixel-ratio : 3) 
+{ }
+
+@media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px)
+    and (device-width : 414px)
+    and (device-height : 736px)
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 3) 
+    and (-webkit-device-pixel-ratio : 3)
+{ }
+
+@media only screen 
+    and (max-device-width: 640px), 
+    only screen and (max-device-width: 667px), 
+    only screen and (max-width: 480px)
+{ }
+
+@media screen 
+    and (min-device-width : 1080px) 
+    and (max-device-width : 1920px) 
+    and (min-resolution: 401dpi) 
+    and (device-aspect-ratio:16/9) 
+{ }
+
+@media screen 
+    and (min-device-width : 750px) 
+    and (max-device-width : 1334px) 
+    and (min-resolution: 326dpi) 
+{ }
