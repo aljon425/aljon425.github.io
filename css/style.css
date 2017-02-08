@@ -1116,6 +1116,19 @@ textarea:focus {
     }
 }
 
+@media only screen and (max-width: 414px) {
+    .box-headline {
+        font-size: 30px;
+    }
+    .box-intro h5 {
+        font-size: 12px;
+    }
+    .top-bar h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
 @media only screen and (max-width: 375px) {
     .box-headline {
         font-size: 20px;
